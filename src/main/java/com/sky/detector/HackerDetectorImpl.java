@@ -17,8 +17,8 @@ import com.sky.detector.model.LoginInfo;
  * 
  */
 
-public class LogProcessor implements HackerDetector {
-	private static Logger logger = Logger.getLogger(LogProcessor.class);
+public class HackerDetectorImpl implements HackerDetector {
+	private static Logger logger = Logger.getLogger(HackerDetectorImpl.class);
 
 	private HackerDetectorConfiguraion configuration;
 	private Queue<LoginInfo> loginInfoQueue;

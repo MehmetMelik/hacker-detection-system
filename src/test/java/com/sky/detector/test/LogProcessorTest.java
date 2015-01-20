@@ -8,15 +8,15 @@ import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.sky.detector.LogProcessor;
+import com.sky.detector.HackerDetectorImpl;
 
 public class LogProcessorTest {
 	
-	private LogProcessor logProcessor;
+	private HackerDetectorImpl logProcessor;
 	
 	@Before
 	public void setup() throws IOException {
-		logProcessor = new LogProcessor();
+		logProcessor = new HackerDetectorImpl();
 		logProcessor.init();
 		
 		// put some data
