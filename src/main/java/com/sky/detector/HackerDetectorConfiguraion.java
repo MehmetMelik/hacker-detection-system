@@ -3,7 +3,8 @@ package com.sky.detector;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * 
@@ -14,7 +15,7 @@ import org.apache.log4j.Logger;
  * 
  */
 public class HackerDetectorConfiguraion {
-	private static Logger logger = Logger
+	private static Logger logger = LogManager
 			.getLogger(HackerDetectorConfiguraion.class);
 
 	private long inspectFailedLoginInterval; // 300L; // 5 * 60 seconds

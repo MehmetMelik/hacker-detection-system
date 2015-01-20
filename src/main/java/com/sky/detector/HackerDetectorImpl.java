@@ -7,7 +7,8 @@ import java.io.IOException;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.sky.detector.model.LoginInfo;
 
@@ -18,7 +19,7 @@ import com.sky.detector.model.LoginInfo;
  */
 
 public class HackerDetectorImpl implements HackerDetector {
-	private static Logger logger = Logger.getLogger(HackerDetectorImpl.class);
+	private static Logger logger = LogManager.getLogger(HackerDetectorImpl.class);
 
 	private HackerDetectorConfiguraion configuration;
 	private Queue<LoginInfo> loginInfoQueue;
